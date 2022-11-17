@@ -1,0 +1,294 @@
+/*Inicio estilo index*/
+html { /* etiqueta raiz */
+    /* 1rem = 10 px */
+font-size: 62.5%;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    font-size: 92.5%;
+}
+
+body {
+   /*Gradiente lineal*/
+   background-image: linear-gradient(to bottom right, #a8ff78, #78ffd6);
+}
+ .imagen-header {
+    width: 110px;
+    height: 70px;
+    }
+
+ul {
+    list-style-type: none;
+}
+
+/* MENU NAVEGACION INLINE*/
+
+nav {
+   margin-top: 0; 
+}
+.lista-navegacion li{
+    display: inline;
+    font-size: 1.5rem;
+    background-color: beige;
+    padding: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+h1 {
+color: green;
+font-family: 'Roboto', sans-serif;
+font-size: 3rem;
+margin-top: 0rem;
+}
+
+h2 {
+    color: green;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+    }
+
+    h3 {
+        color: green;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.0rem;
+    }
+
+    h4 {
+        color: green;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.9rem;
+    }
+
+    p {
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        }
+
+p {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.color-verde {
+    color:green;
+}
+
+.fuente-grande
+{
+    font-size: 20px ;
+}
+
+/*Fin estilo index*/
+
+/*MENU NAVEGACION FLEX*/
+#header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+#header-flex img{
+    width: 100px;
+
+}
+
+.lista-navegacion_flex {
+    display: flex;
+    gap: 1.5rem;
+  
+
+}
+.lista-navegacion_flex li {
+    font-size: 1.8rem;
+    background-color: beige;
+}
+
+.imagen-header {
+    width: 110px;
+    height: 70px;
+    align-items: left ;
+    }
+/*FINALIZA MENU NAVEGACION FLEX*/
+
+
+/*INICIA ESTILOS DE CARD*/
+    .card__parrafo {
+        font-size: 1.8 rem; /* = 18 px*/
+        margin-bottom: rem;
+    }
+
+    .boton {
+        padding-left: 0rem;
+    }
+
+    .card__img {
+        width: 35rem; /* ancho */
+      }
+
+      .card {
+        border: solid .2rem green;
+        width: 30rem;
+        padding: rem;
+
+        position: relative;
+    }
+      <p> {
+         text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* CSS DE LOS CURSOS BABY VEGAN*/
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    background-color: none;
+
+
+
+   }
+ 
+   ul {
+    list-style: none;
+   }
+
+/* DESKTOP FIRST */
+  /* GRILLA PRINCIPAL */
+
+  #grilla-cursos {
+    display: grid;
+    grid-template-areas:
+    "cabecera cabecera cabecera"
+    "cursos cursos cursos"
+    "banner banner banner"
+    "footer footer footer";
+ 
+    grid-template-columns: repeat(3, 1fr);
+    background-color:azure;
+   }
+
+   /*HEADER O CABECERA*/
+#header-cursos {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+
+ }
+
+ @media screen and (max-width: 767px) {
+    #header-cursos {
+       flex-direction: column }
+    }
+
+ .logo {
+    height: 7rem;
+}
+
+#navegacion-grilla {
+    display: flex;
+    gap: .8rem;
+ }
+
+ @media screen and (max-width: 499px) {
+    #navegacion-grilla {
+       flex-direction: column;  }
+    }
+
+ #navegacion-grilla li {
+    background-color: #e2a1a7;
+    padding: .3rem 1rem;
+    border-radius: 15px;
+    
+}
+
+    #navegacion-grilla li:hover {
+        background-color:  rgba(252, 0, 63, 0.788) ;
+ }
+ 
+ /*CURSOS*/
+#cursos-babyvegan {
+    grid-area: cursos;
+ }
+
+ #cursos-babyvegan h2,
+ #cursos-babyvegan p {
+   text-align: center;
+}
+
+   .padre-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+    
+ }
+
+
+ @media screen and (max-width: 992px) {
+    .padre-cards {
+       grid-template-columns: repeat(2, 1fr);
+
+    }
+ }
+
+
+ @media screen and (max-width: 767px) {
+    .padre-cards {
+       grid-template-columns: repeat(2, 1fr);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+ }
+ .card-cursos {
+ width: 20rem;
+ border: solid 2px green;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 2rem;
+}
+
+.card-cursos img {height: 18rem;}
+
+/*BANNER*/
+#banner-cursos {
+    grid-area: banner;
+ }
+
+ /*FOOTER*/
+ #footer {
+    grid-area: footer;
+ }
+
+
+
+
+
+img {
+    max-width: 100%;
+   }
+ 

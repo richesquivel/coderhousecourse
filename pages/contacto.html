@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Etiqueta header-->
+    <header id="header-flex">    
+        <!-- Etiqueta nav indica que dentro de ella arranca mi menu de navegacion -->
+        <img src="../img/logo-02.png" alt="bebe vegano">
+        <nav>
+            <ul class="lista-navegacion_flex">
+				<li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="ubicacion.html">Ubicación</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galería</a>
+                </li>
+                <li>
+                    <a href="videos.html">Videos</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="cursos.html">CURSOS</a>
+                </li>
+				
+			</ul>
+			</ul>
+
+        </nav>
+    </header>
+    <section>
+        <h1>Contacto</h1>
+
+        <p>Completa el formulario con tus datos y te contactaremos.</p>
+
+        <form>
+            <fieldset>
+                <legend>Información Personal:</legend>
+
+                <p>Sexo:</p>
+                <input type="radio" name="sexo" id="hombre">
+                <lable for="hombre">Hombre</lable>
+
+                <input type="radio" name="sexo" id="mujer">
+                <lable for="mujer">Mujer</lable>
+                
+                <div>
+                    <lable for="nombre">Nombre</lable>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                </div>
+              
+
+                <div>
+                    <lable for="apellido">Apellido</lable>
+                    <input type="text" id="apellido" placeholder="Apellido">
+                </div>
+                <div>
+                    <label for="talle">Talle</label>
+                    <select id="talle">
+                        <option>Large</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                    </select>
+                </div>
+                <input type="submit" value="Enviar">
+                
+            </fieldset>
+        </form>
+    </section>  
+    <footer>
+        <p>Sitio desarrollado en el curso de desarrollo web Coderhose</p>
+    </footer> 
+</body>
+</html>
