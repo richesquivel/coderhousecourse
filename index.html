@@ -14,12 +14,12 @@
 </head>
 <body>
     <!--Etiqueta header-->
-    <header>
+    <header id="header-flex">
         <!-- Etiqueta nav indica que dentro de ella arranca mi menu de navegacion -->
         <img src="img/logo-02.png" alt="bebe vegano"
         class="imagen-header">        
-        <nav class="lista-navegacion">
-            <ul>
+        <nav>
+            <ul class="lista-navegacion_flex", id="navegacion-grilla">
 				<li>
                     <a href="index.html">Inicio</a>
                 </li>
@@ -46,7 +46,7 @@
         </nav>
     </header>
     
-    <section id="contenido-sitio">
+    <section id="contenido-sitio" class="contenedor">
         <h1>Bebés Veganos</h1>
         <P>A partir de los 6 meses de edad los bebés empiezan a comer otros alimentos aparte de la leche, aunque hasta los 12 meses la leche (materna o una fórmula adaptada infantil) sigue siendo su principal alimento y fuente de nutrientes. Muchas madres siguen amamantando a sus bebés hasta los 2 años o más, y los beneficios de esto son inmensos. En algunas culturas era frecuente que niños y niñas recibieran leche de sus madres hasta los 6-7 años. Como madre, es importante que seáis tú y tu hijo/a quienes decidáis hasta cuándo queréis continuar vuestra lactancia, independientemente de lo que digan familiares, amigos o profesionales sanitarios.</P>
         <img src="img/bebes_veganos.jpg"
@@ -70,15 +70,16 @@
         </div>
 
     </section>
-    <section>
+
+    <section class="contenedor>
         <h3>Autores de Libros</h2>
     </section>
     
 
-    <section>
+    <section class="contenedor">
         <!-- inicio de una tabla  -->
          <!-- Celpading espacio hacia adentro de la sletras y cell spacing espacio entre celdas  -->
-<table border="1" cellpading="10" cellspacing="10">
+<table border="1" cellpading="10" cellspacing="10" class="contenedor">
     <!-- TR = table heading -titulo de tabla -->
     <th class="color-verde fuente-grande">Cuentos</th>
     <th class="color-verde fuente-grande"> Educación</th>
@@ -106,11 +107,11 @@
     </div>
 
     <Section>
-        <p>El mejor newsletter para padres de niños veganos. Recibe información valiosa y actual.</p>
-<form>
+        <p class="contenedor">El mejor newsletter para padres de niños veganos. Recibe información valiosa y actual.</p>
+<form class="contenedor">
     <fieldset>
 
-        <div>
+        <div class="contenedor">
             <lable for="nombre">Nombre y apellido</lable>
             <input type="text" id="nombre" required>
         </div>
@@ -157,7 +158,7 @@
 </form>
     </Section>
 
-    <footer>
+    <footer class="contenedor">
         <p>Sitio desarrollado en el curso de desarrollo web Coderhose</p>
     </footer> 
 </body>
