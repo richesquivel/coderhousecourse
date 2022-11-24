@@ -49,30 +49,42 @@ color: green;
 font-family: 'Roboto', sans-serif;
 font-size: 3rem;
 margin-top: 0rem;
+text-align: center;
 }
 
 h2 {
     color: green;
     font-family: 'Roboto', sans-serif;
     font-size: 2.4rem;
+     text-align: center;
     }
 
     h3 {
         color: green;
         font-family: 'Roboto', sans-serif;
         font-size: 2.0rem;
+        text-align: center;
     }
 
     h4 {
         color: green;
         font-family: 'Roboto', sans-serif;
         font-size: 1.9rem;
+        text-align: center;
+    }
+
+    h5 {
+        color: green;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     p {
         color: black;
         font-family: 'Roboto', sans-serif;
         font-size: 1.2rem;
+        
         }
 
 p {
@@ -80,6 +92,7 @@ p {
     margin-bottom: 3rem;
     line-height: 1.6;
 }
+
 
 .color-verde {
     color:green;
@@ -145,15 +158,16 @@ p {
 
         position: relative;
     }
-     <p> {
+        p {
          text-align: center;
+        
     }
 
 
 /* CSS DE contenido de 5 PÁGINAS*/
-.contenedor{
+.container-fluid{
     width:960px;
-    margin:auto;
+    
     text-align: center;
     align-items: center;
 }
@@ -236,6 +250,7 @@ p {
  /*CURSOS*/
 #cursos-babyvegan {
     grid-area: cursos;
+
  }
 
  #cursos-babyvegan h2,
@@ -277,17 +292,30 @@ p {
  padding: 2rem;
 }
 
+.contenido-sitio {
+    width: 20rem;
+    border: solid 2px green;
+    align-items: center;
+    padding: 2rem;
+   }
+   
+   #contenido-sitio {
+    flex-direction: center;
+    align-items: center ;
+}
+
+
 .card-cursos img {height: 18rem;}
 
 /*BANNER*/
-#banner-cursos {
-    grid-area: banner;
- }
 
- /*FOOTER*/
- #footer {
-    grid-area: footer;
- }
+ .padre-banners {
+    align-items: center;
+   }
+
+   #banner-cursos {
+     text-align: center;
+  }
 
 
 
